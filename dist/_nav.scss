@@ -1,0 +1,25 @@
+nav {
+  font-family: "Cabin", sans-serif;
+  @include flex(space-between, center);
+  padding: 20px 40px;
+
+  #logo {
+    height: 70px;
+    cursor: pointer;
+  }
+
+  ul {
+    @include flex(space-between, center);
+    list-style-type: none;
+
+    li {
+      padding: 0 20px;
+      cursor: pointer;
+    }
+  }
+
+  #account {
+    height: 20px;
+    cursor: pointer;
+  }
+}
