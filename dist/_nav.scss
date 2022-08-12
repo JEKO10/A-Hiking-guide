@@ -1,5 +1,5 @@
 nav {
-  font-family: "Cabin", sans-serif;
+  font-family: $secondaryFont;
   @include flex(space-between, center);
   padding: 20px 40px;
 

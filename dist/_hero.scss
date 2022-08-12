@@ -1,31 +1,45 @@
 .hero {
-  min-height: 100vh;
+  min-height: 50vh;
+  @include flex(center, center);
+  font-family: $primaryFont;
 
   > div {
-    max-width: 80vw;
-    margin: 0 auto;
     padding: 0 40px;
+    margin-left: 15rem;
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 88px;
     line-height: 100px;
     max-width: 950px;
     font-weight: 200;
+    margin: 1.5rem 0;
   }
 
-  h3 {
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #fbd784;
-    letter-spacing: 6px;
-    padding: 0 40px;
-    font-size: 18px;
+  > div > div {
+    @include flex(flex-start, center);
+
+    .underline {
+      height: 2px;
+      width: 72px;
+      background-color: #fbd784;
+      margin-right: 2rem;
+    }
+
+    h3 {
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #fbd784;
+      letter-spacing: 6px;
+      font-size: 18px;
+    }
   }
 
   p {
     font-size: 18px;
-    font-family: "Cabin", sans-serif;
-    font-weight: 800;
+    font-family: $secondaryFont;
+    font-weight: 200;
+    margin-right: 2rem;
+    letter-spacing: 2px;
   }
 }

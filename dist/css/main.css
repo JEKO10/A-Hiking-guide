@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap");
 header {
   background: url("../../images/hero.png") top/cover no-repeat;
-  min-height: 130vh;
+  min-height: 160vh;
   color: #fff;
-  font-family: "Crimson Text", serif;
 }
 
 nav {
@@ -45,31 +44,59 @@ nav #account {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Crimson Text", serif;
 }
 .hero > div {
-  max-width: 80vw;
-  margin: 0 auto;
   padding: 0 40px;
+  margin-left: 15rem;
 }
 .hero h1 {
-  font-size: 5rem;
+  font-size: 88px;
   line-height: 100px;
   max-width: 950px;
   font-weight: 200;
+  margin: 1.5rem 0;
 }
-.hero h3 {
+.hero > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero > div > div .underline {
+  height: 2px;
+  width: 72px;
+  background-color: #fbd784;
+  margin-right: 2rem;
+}
+.hero > div > div h3 {
   font-weight: 300;
   text-transform: uppercase;
   color: #fbd784;
   letter-spacing: 6px;
-  padding: 0 40px;
   font-size: 18px;
 }
 .hero p {
   font-size: 18px;
   font-family: "Cabin", sans-serif;
-  font-weight: 800;
+  font-weight: 200;
+  margin-right: 2rem;
+  letter-spacing: 2px;
 }
 
 * {

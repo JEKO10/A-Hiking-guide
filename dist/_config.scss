@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap");
 
+$primaryFont: "Crimson Text", serif;
+$secondaryFont: "Cabin", sans-serif;
+
 @mixin flex($justify, $align) {
   display: flex;
   justify-content: $justify;
