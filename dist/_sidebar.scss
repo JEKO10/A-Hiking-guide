@@ -1,0 +1,17 @@
+.sideBar {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  @include flex(center, center);
+  flex-direction: column;
+
+  p {
+    transform: rotate(90deg);
+    margin: 0 0 3rem;
+  }
+
+  img {
+    margin: 0.8rem 0;
+    cursor: pointer;
+  }
+}
