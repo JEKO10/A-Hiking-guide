@@ -3,7 +3,7 @@
   font-family: $primaryFont;
   min-height: 50vh;
 
-  > div:last-of-type {
+  > div:nth-child(2) {
     padding: 0 40px;
     margin-left: 10rem;
   }

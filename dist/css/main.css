@@ -56,7 +56,7 @@ nav #account {
   font-family: "Crimson Text", serif;
   min-height: 50vh;
 }
-.hero > div:last-of-type {
+.hero > div:nth-child(2) {
   padding: 0 40px;
   margin-left: 10rem;
 }
@@ -128,6 +128,49 @@ nav #account {
 .sideBar img {
   margin: 0.8rem 0;
   cursor: pointer;
+}
+
+.slider {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  font-family: "Cabin", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.slider ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slider ul li {
+  font-weight: 800;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+.slider .progress {
+  height: 200px;
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 2rem;
 }
 
 * {
