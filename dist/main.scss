@@ -1,7 +1,30 @@
-@import "config", "header", "nav", "hero", "sidebar", "slider";
+@import "config", "header", "nav", "hero", "sidebar", "slider", "getStarted";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #0b1d26;
+}
+
+.subheader {
+  @include flex(flex-start, center);
+
+  .underline {
+    height: 1.5px;
+    width: 72px;
+    background-color: #fbd784;
+    margin-right: 2rem;
+  }
+
+  h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fbd784;
+    letter-spacing: 6px;
+    font-size: 18px;
+  }
 }

@@ -1,11 +1,16 @@
 .hero {
-  @include flex(center, center);
+  @include flex(center, flex-start);
   font-family: $primaryFont;
-  min-height: 50vh;
+  min-height: 150vh;
+  background: linear-gradient(
+    top,
+    rgba(11, 29, 38, 0) 70%,
+    rgba(11, 29, 38, 1) 100%
+  );
 
   > div:nth-child(2) {
     padding: 0 40px;
-    margin-left: 10rem;
+    margin: 3rem 0 0 15rem;
   }
 
   h1 {
@@ -18,21 +23,6 @@
 
   > div > div {
     @include flex(flex-start, center);
-
-    .underline {
-      height: 2px;
-      width: 72px;
-      background-color: #fbd784;
-      margin-right: 2rem;
-    }
-
-    h3 {
-      font-weight: 300;
-      text-transform: uppercase;
-      color: #fbd784;
-      letter-spacing: 6px;
-      font-size: 18px;
-    }
 
     &:last-of-type {
       cursor: pointer;
