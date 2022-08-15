@@ -1,7 +1,7 @@
-.getStarted {
+.mainSection {
   font-family: $secondaryFont;
-  background-color: #0b1d26;
-  margin-bottom: 5rem;
+  background-color: $primaryColor;
+  margin-bottom: 10rem;
 
   > article {
     max-width: 75vw;
@@ -10,7 +10,7 @@
 
     > img {
       zoom: 0.7;
-      padding-left: 20px;
+      padding-left: 60px;
     }
   }
 
@@ -41,8 +41,14 @@
     cursor: pointer;
 
     p {
-      color: #fbd784;
+      color: $secondaryColor;
       margin-right: 1rem;
     }
+  }
+}
+
+.essentials > article {
+  > img {
+    padding: 0 60px 0 0;
   }
 }

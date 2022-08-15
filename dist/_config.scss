@@ -2,6 +2,8 @@
 
 $primaryFont: "Crimson Text", serif;
 $secondaryFont: "Cabin", sans-serif;
+$primaryColor: #0b1d26;
+$secondaryColor: #fbd784;
 
 @mixin flex($justify, $align) {
   display: flex;

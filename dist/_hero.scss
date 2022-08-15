@@ -1,16 +1,11 @@
 .hero {
   @include flex(center, flex-start);
   font-family: $primaryFont;
-  min-height: 150vh;
-  background: linear-gradient(
-    top,
-    rgba(11, 29, 38, 0) 70%,
-    rgba(11, 29, 38, 1) 100%
-  );
+  min-height: 100%;
 
   > div:nth-child(2) {
     padding: 0 40px;
-    margin: 3rem 0 0 15rem;
+    margin: 3rem 0 0 10rem;
   }
 
   h1 {
