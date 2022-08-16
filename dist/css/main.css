@@ -68,21 +68,21 @@ nav #account {
   font-weight: 200;
   margin: 1.5rem 0;
 }
-.hero > div > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hero a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.hero > div > div:last-of-type {
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
 }
-.hero p {
+.hero a p {
   font-size: 18px;
   font-family: "Cabin", sans-serif;
   font-weight: 400;
@@ -107,11 +107,15 @@ nav #account {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Cabin", sans-serif;
 }
 .sideBar p {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   margin: 0 0 3rem;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 .sideBar img {
   margin: 0.8rem 0;
@@ -164,11 +168,8 @@ nav #account {
 .mainSection {
   font-family: "Cabin", sans-serif;
   background-color: #0b1d26;
-  margin-bottom: 10rem;
-}
-.mainSection > article {
   max-width: 75vw;
-  margin: 0 auto;
+  margin: 10rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,8 +179,9 @@ nav #account {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 20px;
 }
-.mainSection > article > img {
+.mainSection > img {
   zoom: 0.7;
   padding-left: 60px;
 }
@@ -217,7 +219,7 @@ nav #account {
   margin-right: 1rem;
 }
 
-.essentials > article > img {
+.essentials > img {
   padding: 0 60px 0 0;
 }
 
@@ -226,6 +228,10 @@ nav #account {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

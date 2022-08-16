@@ -16,19 +16,20 @@
     margin: 1.5rem 0;
   }
 
-  > div > div {
-    @include flex(flex-start, center);
+  a {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 
-    &:last-of-type {
-      cursor: pointer;
+    p {
+      font-size: 18px;
+      font-family: $secondaryFont;
+      font-weight: 400;
+      margin-right: 2rem;
+      letter-spacing: 2px;
     }
-  }
-
-  p {
-    font-size: 18px;
-    font-family: $secondaryFont;
-    font-weight: 400;
-    margin-right: 2rem;
-    letter-spacing: 2px;
   }
 }

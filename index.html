@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>A Hiking guide</title>
   </head>
   <body>
     <header>
       <nav>
-        <img src="./images/logo.png" alt="Logo" id="logo" />
+        <img
+          src="./images/logo.png"
+          alt="Logo"
+          id="logo"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+        />
         <ul>
-          <li>Equipment</li>
-          <li>About us</li>
-          <li>Blog</li>
+          <li data-aos="zoom-in" data-aos-delay="600">Equipment</li>
+          <li data-aos="zoom-in" data-aos-delay="700">About us</li>
+          <li data-aos="zoom-in" data-aos-delay="800">Blog</li>
         </ul>
-        <img src="./images/account.png" alt="account" id="account" />
+        <img
+          src="./images/account.png"
+          alt="account"
+          id="account"
+          data-aos="zoom-in"
+          data-aos-delay="900"
+        />
       </nav>
       <section class="hero">
-        <div class="sideBar">
+        <div class="sideBar" data-aos="zoom-in" data-aos-delay="2000">
           <p>Follow us</p>
           <a href="https://www.instagram.com/" target="_blank">
             <img src="./images/instagram.png" alt="instagram"
@@ -28,106 +42,103 @@
             <img src="./images/twitter.png" alt="twitter" />
           </a>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="1300">
           <div class="subheader">
             <div class="underline"></div>
             <h3>A Hiking guide</h3>
           </div>
           <h1>Be prepared for the Mountains and beyond!</h1>
-          <div>
+          <a href="#start">
             <p>scroll down</p>
             <img src="./images/arrowDown.png" alt="arrow" id="arrow" />
-          </div>
+          </a>
         </div>
         <div class="slider">
           <ul>
-            <li>Start</li>
-            <li>01</li>
-            <li>02</li>
-            <li>03</li>
+            <li data-aos="zoom-in" data-aos-delay="2000">Start</li>
+            <li data-aos="zoom-in" data-aos-delay="2300">01</li>
+            <li data-aos="zoom-in" data-aos-delay="2600">02</li>
+            <li data-aos="zoom-in" data-aos-delay="2900">03</li>
           </ul>
           <div class="progress"></div>
         </div>
       </section>
     </header>
     <main>
-      <section class="mainSection">
-        <article>
-          <article>
-            <div class="subheader">
-              <div class="underline"></div>
-              <h3>Get Started</h3>
-            </div>
-            <div>
-              <h1>What level of hiker are you?</h1>
-              <p>
-                Determining what level of hiker you are can be an important tool
-                when planning future hikes. This hiking level guide will help
-                you plan hikes according to different hike ratings set by
-                various websites like All Trails and Modern Hiker. What type of
-                hiker are you - novice, moderate, advanced moderate, expert, or
-                expert backpacker?
-              </p>
-            </div>
-            <div class="readMore">
-              <p>read more</p>
-              <img src="./images/readMoreArrow.png" alt="arrow" />
-            </div>
-          </article>
-          <img src="./images/getStarted.png" alt="IMG" />
+      <section class="mainSection" id="start">
+        <article data-aos="fade-right">
+          <div class="subheader">
+            <div class="underline"></div>
+            <h3>Get Started</h3>
+          </div>
+          <div>
+            <h1>What level of hiker are you?</h1>
+            <p>
+              Determining what level of hiker you are can be an important tool
+              when planning future hikes. This hiking level guide will help you
+              plan hikes according to different hike ratings set by various
+              websites like All Trails and Modern Hiker. What type of hiker are
+              you - novice, moderate, advanced moderate, expert, or expert
+              backpacker?
+            </p>
+          </div>
+          <div class="readMore">
+            <p>read more</p>
+            <img src="./images/readMoreArrow.png" alt="arrow" />
+          </div>
         </article>
+
+        <img src="./images/getStarted.png" alt="IMG" data-aos="fade-left" />
       </section>
       <section class="mainSection essentials">
-        <article>
-          <img src="./images/essentials.png" alt="IMG" />
-          <article>
-            <div class="subheader">
-              <div class="underline"></div>
-              <h3>Hiking Essentials</h3>
-            </div>
-            <div>
-              <h1>Picking the right Hiking Gear!</h1>
-              <p>
-                The nice thing about beginning hiking is that you don’t really
-                need any special gear, you can probably get away with things you
-                already have. Let’s start with clothing. A typical mistake
-                hiking beginners make is wearing jeans and regular clothes,
-                which will get heavy and chafe wif they get sweaty or wet.
-              </p>
-            </div>
-            <div class="readMore">
-              <p>read more</p>
-              <img src="./images/readMoreArrow.png" alt="arrow" />
-            </div>
-          </article>
+        <img src="./images/essentials.png" alt="IMG" data-aos="fade-right" />
+        <article data-aos="fade-left">
+          <div class="subheader">
+            <div class="underline"></div>
+            <h3>Hiking Essentials</h3>
+          </div>
+          <div>
+            <h1>Picking the right Hiking Gear!</h1>
+            <p>
+              The nice thing about beginning hiking is that you don’t really
+              need any special gear, you can probably get away with things you
+              already have. Let’s start with clothing. A typical mistake hiking
+              beginners make is wearing jeans and regular clothes, which will
+              get heavy and chafe wif they get sweaty or wet.
+            </p>
+          </div>
+          <div class="readMore">
+            <p>read more</p>
+            <img src="./images/readMoreArrow.png" alt="arrow" />
+          </div>
         </article>
       </section>
       <section class="mainSection">
-        <article>
-          <article>
-            <div class="subheader">
-              <div class="underline"></div>
-              <h3>Where you go is the key</h3>
-            </div>
-            <div>
-              <h1>Understand Your Map & Timing</h1>
-              <p>
-                To start, print out the hiking guide and map. If it’s raining,
-                throw them in a Zip-Lock bag. Read over the guide, study the
-                map, and have a good idea of what to expect. I like to know what
-                my next landmark is as I hike. For example, I’ll read the guide
-                and know that say, in a mile, I make a right turn at the
-                junction..
-              </p>
-            </div>
-            <div class="readMore">
-              <p>read more</p>
-              <img src="./images/readMoreArrow.png" alt="arrow" />
-            </div>
-          </article>
-          <img src="./images/compass.png" alt="IMG" />
+        <article data-aos="fade-right">
+          <div class="subheader">
+            <div class="underline"></div>
+            <h3>Where you go is the key</h3>
+          </div>
+          <div>
+            <h1>Understand Your Map & Timing</h1>
+            <p>
+              To start, print out the hiking guide and map. If it’s raining,
+              throw them in a Zip-Lock bag. Read over the guide, study the map,
+              and have a good idea of what to expect. I like to know what my
+              next landmark is as I hike. For example, I’ll read the guide and
+              know that say, in a mile, I make a right turn at the junction..
+            </p>
+          </div>
+          <div class="readMore">
+            <p>read more</p>
+            <img src="./images/readMoreArrow.png" alt="arrow" />
+          </div>
         </article>
+        <img src="./images/compass.png" alt="IMG" data-aos="fade-left" />
       </section>
     </main>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
