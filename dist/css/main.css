@@ -163,6 +163,17 @@ nav #account {
   width: 3px;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0 2rem;
+  position: relative;
+}
+.slider .progress > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 3px;
+  background-color: #fff;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
 }
 
 .mainSection {

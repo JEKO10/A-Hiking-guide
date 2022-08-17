@@ -22,5 +22,16 @@
     width: 3px;
     background-color: rgba($color: #fff, $alpha: 0.5);
     margin: 0 2rem;
+    position: relative;
+
+    > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50px;
+      width: 3px;
+      background-color: #fff;
+      transition: all 1.5s ease;
+    }
   }
 }
