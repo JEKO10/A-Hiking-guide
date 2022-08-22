@@ -1,0 +1,35 @@
+@include mediaLarge {
+  header {
+    height: 130vh;
+  }
+
+  .hero {
+    @include flex(center, flex-start);
+
+    div:nth-child(2):not(.progress) {
+      margin: 1.5rem 0 0 5rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      line-height: 80px;
+      max-width: 650px;
+      margin: 1rem 0;
+    }
+  }
+
+  .mainSection {
+    h1 {
+      font-size: 3rem;
+    }
+
+    > img {
+      zoom: 0.6;
+    }
+
+    p {
+      line-height: 25px;
+      font-size: 1rem;
+    }
+  }
+}
