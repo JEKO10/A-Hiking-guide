@@ -269,6 +269,45 @@ nav #account {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 992px) {
+  header {
+    height: 100vh;
+  }
+  .hero div:nth-child(2):not(.progress) {
+    margin: 1.5rem 0 0;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 55px;
+    max-width: 450px;
+  }
+  .hero a p {
+    font-weight: 800;
+  }
+  .mainSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5rem auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mainSection > img {
+    padding-left: 0;
+    margin-top: 3rem;
+  }
+  .mainSection p {
+    max-width: 550px;
+  }
+  .essentials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 * {
   margin: 0;
   padding: 0;

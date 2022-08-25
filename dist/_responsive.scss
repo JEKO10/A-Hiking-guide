@@ -33,3 +33,44 @@
     }
   }
 }
+
+@include mediaMediumLarge {
+  header {
+    height: 100vh;
+  }
+
+  .hero {
+    div:nth-child(2):not(.progress) {
+      margin: 1.5rem 0 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 55px;
+      max-width: 450px;
+    }
+
+    a p {
+      font-weight: 800;
+    }
+  }
+
+  .mainSection {
+    flex-direction: column;
+    margin: 5rem auto;
+    align-items: flex-start;
+
+    > img {
+      padding-left: 0;
+      margin-top: 3rem;
+    }
+
+    p {
+      max-width: 550px;
+    }
+  }
+
+  .essentials {
+    flex-direction: column-reverse;
+  }
+}
