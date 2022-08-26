@@ -1,8 +1,4 @@
 @include mediaLarge {
-  header {
-    height: 130vh;
-  }
-
   .hero {
     @include flex(center, flex-start);
 
@@ -35,10 +31,6 @@
 }
 
 @include mediaMediumLarge {
-  header {
-    height: 100vh;
-  }
-
   .hero {
     div:nth-child(2):not(.progress) {
       margin: 1.5rem 0 0;
@@ -72,5 +64,38 @@
 
   .essentials {
     flex-direction: column-reverse;
+  }
+}
+
+@include mediaMedium {
+  header {
+    height: 130vh;
+  }
+
+  .hero {
+    div:nth-child(2):not(.progress) {
+      margin: 1.5rem 0 0 4rem;
+    }
+
+    h1 {
+      max-width: 590px;
+      font-size: 2.9rem;
+    }
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .sideBar {
+    margin-left: -1rem;
+  }
+
+  .mainSection {
+    [data-aos^="fade"][data-aos^="fade"] {
+      opacity: 1 !important;
+      transition: none !important;
+      transform: none !important;
+    }
   }
 }

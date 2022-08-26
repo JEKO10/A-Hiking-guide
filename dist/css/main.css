@@ -235,9 +235,6 @@ nav #account {
 }
 
 @media (max-width: 1200px) {
-  header {
-    height: 130vh;
-  }
   .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -270,9 +267,6 @@ nav #account {
   }
 }
 @media screen and (max-width: 992px) {
-  header {
-    height: 100vh;
-  }
   .hero div:nth-child(2):not(.progress) {
     margin: 1.5rem 0 0;
   }
@@ -306,6 +300,31 @@ nav #account {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 130vh;
+  }
+  .hero div:nth-child(2):not(.progress) {
+    margin: 1.5rem 0 0 4rem;
+  }
+  .hero h1 {
+    max-width: 590px;
+    font-size: 2.9rem;
+  }
+  .slider {
+    display: none;
+  }
+  .sideBar {
+    margin-left: -1rem;
+  }
+  .mainSection [data-aos^=fade][data-aos^=fade] {
+    opacity: 1 !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+    -webkit-transform: none !important;
+            transform: none !important;
   }
 }
 * {
