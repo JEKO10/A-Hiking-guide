@@ -27,3 +27,18 @@ third.addEventListener("click", () => {
 window.onload = () => {
   document.documentElement.scrollTop = 0;
 };
+
+const menuBtn = document.querySelector(".menuBtn");
+const menuBurger = document.querySelector(".menuBurger");
+const navList = document.querySelector("nav ul");
+const socials = document.querySelectorAll(".sideBar a img");
+
+menuBtn.addEventListener("click", () => {
+  menuBurger.classList.toggle("open");
+  navList.classList.toggle("hide");
+  socials.forEach((item) => {
+    item.classList.toggle("hide");
+    console.log(item);
+  });
+  document.body.classList.toggle("hidden");
+});
