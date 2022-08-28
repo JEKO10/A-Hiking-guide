@@ -64,6 +64,10 @@
 
   .essentials {
     flex-direction: column-reverse;
+
+    > img {
+      padding-right: 0;
+    }
   }
 }
 
@@ -104,10 +108,6 @@
   nav {
     padding: 20px;
     justify-content: flex-start;
-
-    #account {
-      margin: 0 auto;
-    }
 
     .menuBtn {
       display: block;
@@ -154,5 +154,21 @@
         display: none;
       }
     }
+  }
+
+  .hero {
+    text-align: center;
+
+    div:nth-child(2):not(.progress) {
+      margin: 1.5rem 0;
+    }
+
+    h1 {
+      font-size: 3.3rem;
+    }
+  }
+
+  .mainSection {
+    align-items: center;
   }
 }

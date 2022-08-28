@@ -357,6 +357,9 @@ nav .menuBtn .menuBurger.open::after {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .essentials > img {
+    padding-right: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
@@ -389,9 +392,6 @@ nav .menuBtn .menuBurger.open::after {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-  nav #account {
-    margin: 0 auto;
   }
   nav .menuBtn {
     display: block;
@@ -438,6 +438,20 @@ nav .menuBtn .menuBurger.open::after {
   }
   .sideBar img.hide {
     display: none;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero div:nth-child(2):not(.progress) {
+    margin: 1.5rem 0;
+  }
+  .hero h1 {
+    font-size: 3.3rem;
+  }
+  .mainSection {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 * {
