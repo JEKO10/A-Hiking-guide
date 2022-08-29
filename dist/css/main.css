@@ -146,6 +146,31 @@ nav .menuBtn .menuBurger.open::after {
   letter-spacing: 2px;
 }
 
+.subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subheader .underline {
+  height: 1.5px;
+  width: 72px;
+  background-color: #fbd784;
+  margin-right: 2rem;
+}
+.subheader h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fbd784;
+  letter-spacing: 6px;
+  font-size: 18px;
+}
+
 .sideBar {
   position: fixed;
   top: 30%;
@@ -443,7 +468,7 @@ nav .menuBtn .menuBurger.open::after {
     text-align: center;
   }
   .hero div:nth-child(2):not(.progress) {
-    margin: 1.5rem 0;
+    margin: 2rem 0;
   }
   .hero h1 {
     font-size: 3.3rem;
@@ -452,6 +477,44 @@ nav .menuBtn .menuBurger.open::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    height: 150vh;
+  }
+  nav {
+    padding: 10px;
+  }
+  nav .menuBtn {
+    top: 2rem;
+  }
+  .sideBar {
+    top: 2rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 55px;
+  }
+  .subheader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .subheader .underline {
+    height: 3px;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .mainSection {
+    max-width: 85vw;
+  }
+  .mainSection > img {
+    zoom: 0.5;
+  }
+  .mainSection h1 {
+    line-height: 50px;
   }
 }
 * {
@@ -471,29 +534,4 @@ body {
 
 main {
   color: #fff;
-}
-
-.subheader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.subheader .underline {
-  height: 1.5px;
-  width: 72px;
-  background-color: #fbd784;
-  margin-right: 2rem;
-}
-.subheader h3 {
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #fbd784;
-  letter-spacing: 6px;
-  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

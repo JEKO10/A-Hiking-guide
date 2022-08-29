@@ -160,7 +160,7 @@
     text-align: center;
 
     div:nth-child(2):not(.progress) {
-      margin: 1.5rem 0;
+      margin: 2rem 0;
     }
 
     h1 {
@@ -170,5 +170,52 @@
 
   .mainSection {
     align-items: center;
+  }
+}
+
+@include mediaSmall {
+  header {
+    height: 150vh;
+  }
+
+  nav {
+    padding: 10px;
+
+    .menuBtn {
+      top: 2rem;
+    }
+  }
+
+  .sideBar {
+    top: 2rem;
+  }
+
+  .hero {
+    h1 {
+      font-size: 3rem;
+      line-height: 55px;
+    }
+  }
+
+  .subheader {
+    flex-direction: column-reverse;
+
+    .underline {
+      height: 3px;
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }
+
+  .mainSection {
+    max-width: 85vw;
+
+    > img {
+      zoom: 0.5;
+    }
+
+    h1 {
+      line-height: 50px;
+    }
   }
 }

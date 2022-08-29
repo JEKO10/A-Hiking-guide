@@ -1,5 +1,5 @@
-@import "config", "header", "nav", "hero", "sidebar", "slider", "mainSection",
-  "responsive";
+@import "config", "header", "nav", "hero", "subheader", "sidebar", "slider",
+  "mainSection", "responsive";
 
 * {
   margin: 0;
@@ -17,23 +17,4 @@ body {
 
 main {
   color: #fff;
-}
-
-.subheader {
-  @include flex(flex-start, center);
-
-  .underline {
-    height: 1.5px;
-    width: 72px;
-    background-color: $secondaryColor;
-    margin-right: 2rem;
-  }
-
-  h3 {
-    font-weight: 300;
-    text-transform: uppercase;
-    color: $secondaryColor;
-    letter-spacing: 6px;
-    font-size: 18px;
-  }
 }
