@@ -17,7 +17,7 @@ first.forEach((item) => {
 });
 
 second.addEventListener("click", () => {
-  progress.style.top = "50%";
+  progress.style.top = "45%";
 });
 
 third.addEventListener("click", () => {
