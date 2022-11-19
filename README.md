@@ -12,12 +12,12 @@
 
 ## Project task
 
-Beautiful design by Kryston Schwarze that I turned into a site. I used figma to export his design. Project is not finished yet.
-His figma profile: https://www.figma.com/@kryston
+Beautiful design by Kryston Schwarze that I turned into a site. I used Figma to export his design. The project is not finished yet.
+His Figma profile: https://www.figma.com/@kryston
 
 ## Project overview
 
-I used AOS animations to create load and scroll animations. Socials are fixed on the left, while fully functional slider is on the right side. Website is fully responsive. We start from the hiking basics to more advanced things. With this guide you will become advanced hiker. First we determin what level of hiker you are, then we pick right hiking gear for you, and finally we teach you how to use the map. We cover everything for becoming a good hiker!
+I used AOS animations to create load and scroll animations. Socials are fixed on the left, while the fully functional slider is on the right side. The website is fully responsive. We start from the hiking basics to more advanced things. With this guide, you will become an advanced hiker. First, we determine what level of hiker you are, then we pick the right hiking gear for you, and finally, we teach you how to use the map. We cover everything for becoming a good hiker!
 
 ## Built with
 
