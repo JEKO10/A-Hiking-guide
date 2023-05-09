@@ -1,0 +1,47 @@
+footer {
+  @include flex(space-between, flex-start);
+  color: #fff;
+  max-width: 75vw;
+  margin: 5rem auto;
+
+  img {
+    height: 45px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  article {
+    height: 100%;
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    font-family: $secondaryFont;
+
+    &:first-of-type {
+      p {
+        color: #fff;
+        line-height: 30px;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      font-weight: 800;
+      max-width: 250px;
+      color: #fbd784;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        margin: 20px 0;
+        transition: color 500ms ease;
+        cursor: pointer;
+
+        &:hover {
+          color: #fbd784;
+        }
+      }
+    }
+  }
+}

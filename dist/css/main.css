@@ -20,7 +20,8 @@ nav {
   padding: 20px 40px;
 }
 nav #logo {
-  height: 70px;
+  height: 45px;
+  margin: 10px;
   cursor: pointer;
 }
 nav ul {
@@ -313,6 +314,65 @@ nav .menuBtn .menuBurger.open::after {
 
 .essentials > img {
   padding: 0 60px 0 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #fff;
+  max-width: 75vw;
+  margin: 5rem auto;
+}
+footer img {
+  height: 45px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+footer article {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Cabin", sans-serif;
+}
+footer article:first-of-type p {
+  color: #fff;
+  line-height: 30px;
+  font-weight: 600;
+}
+footer article p {
+  font-weight: 800;
+  max-width: 250px;
+  color: #fbd784;
+}
+footer article ul {
+  list-style-type: none;
+}
+footer article ul li {
+  margin: 20px 0;
+  -webkit-transition: color 500ms ease;
+  transition: color 500ms ease;
+  cursor: pointer;
+}
+footer article ul li:hover {
+  color: #fbd784;
 }
 
 @media (max-width: 1200px) {
