@@ -2,7 +2,7 @@ footer {
   @include flex(space-between, flex-start);
   color: #fff;
   max-width: 75vw;
-  margin: 5rem auto;
+  margin: 10rem auto 2rem;
 
   img {
     height: 45px;
@@ -16,18 +16,16 @@ footer {
     flex-direction: column;
     font-family: $secondaryFont;
 
-    &:first-of-type {
-      p {
-        color: #fff;
-        line-height: 30px;
-        font-weight: 600;
-      }
+    &:first-of-type p {
+      color: #fff;
+      line-height: 30px;
+      font-weight: 600;
     }
 
     p {
       font-weight: 800;
       max-width: 250px;
-      color: #fbd784;
+      color: $secondaryColor;
     }
 
     ul {
@@ -39,7 +37,7 @@ footer {
         cursor: pointer;
 
         &:hover {
-          color: #fbd784;
+          color: $secondaryColor;
         }
       }
     }

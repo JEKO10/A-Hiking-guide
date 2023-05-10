@@ -50,7 +50,6 @@
   .mainSection {
     flex-direction: column;
     margin: 5rem auto;
-    align-items: flex-start;
 
     > img {
       padding-left: 0;
@@ -67,6 +66,27 @@
 
     > img {
       padding-right: 0;
+    }
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    article {
+      justify-self: start;
+
+      &:first-of-type {
+        width: 100%;
+        grid-column: 1/-1;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        text-align: end;
+      }
     }
   }
 }
@@ -101,6 +121,10 @@
       transition: none !important;
       transform: none !important;
     }
+  }
+
+  footer article:last-of-type {
+    justify-self: end;
   }
 }
 
@@ -216,6 +240,28 @@
 
     h1 {
       line-height: 50px;
+    }
+  }
+
+  footer {
+    margin: 6rem auto 2rem;
+
+    article {
+      &:first-of-type {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5rem;
+
+        p {
+          text-align: center;
+          max-width: 100%;
+        }
+      }
+
+      p {
+        text-align: start;
+      }
     }
   }
 }
