@@ -12,7 +12,7 @@
 
 ## Project task
 
- I turned this stunning design by Kryston Schwarze into a site. I used Figma to export his design. The project is not finished yet.
+ I turned this stunning design by Kryston Schwarze into a site. I used Figma to export his design.
 His Figma profile: https://www.figma.com/@kryston
 
 ## Project overview
